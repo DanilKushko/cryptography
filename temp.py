@@ -30,6 +30,10 @@ def fast_module_exp(x, a, p):
 
 
 def miller_test(n, k=50):
+    '''
+    Проверка числа на простоту с помощью
+    теста Миллера-Рабина
+    '''
     d = n - 1
     for _ in range(k):
         a = 2 + random.randint(0, n - 4)
@@ -75,6 +79,7 @@ def g_mod_P(Q, P):
 
 
 def diffie_hellman(Q, P):
+    '''Сборка всех ключей'''
     g = g_mod_P(Q, P)
     Xa = random.randint(1, P - 1)
     Xb = random.randint(1, P - 1)
@@ -86,16 +91,16 @@ def diffie_hellman(Q, P):
 
 
 if __name__ == '__main__':
-    while True:
-        Q, P = generate_prime()
-        Q, P, g, Xa, Xb, Ya, Yb, Zab, Zba = diffie_hellman(Q, P)
-        if Zab == Zba:
-            print(f'Q: {Q}, '
-                  f'P: {P} '
-                  f'g: {g}, '
-                  f'Xa: {Xa}, '
-                  f'Xb: {Xb}, '
-                  f'Ya: {Ya}, '
-                  f'Yb: {Yb} ')
-            print(f'Общий закрытый ключ создан: {Zab}')
-            break
+    Q, P = generate_prime()
+    Q, P, g, Xa, Xb, Ya, Yb, Zab, Zba = diffie_hellman(Q, P)
+    if Zab == Zba:
+        print(f'Q: {Q}, '
+              f'P: {P} '
+              f'g: {g}, '
+              f'Xa: {Xa}, '
+              f'Xb: {Xb}, '
+              f'Ya: {Ya}, '
+              f'Yb: {Yb} ')
+        print(f'Общий закрытый ключ создан: {Zab}')
+    else:
+        print('Ошибка при генерации закрытого ключа.')
