@@ -1,4 +1,9 @@
+"""
+Функция построения общего ключа для двух абонентов по схеме
+Диффи-Хеллмана
+"""
 import random
+
 from my_const import ONE_HUNDRED, VERY_LARGE_NUMBER
 
 
@@ -18,44 +23,71 @@ def decimal_to_binary(decimal_num):
 
 def fast_module_exp(x, a, p):
     '''Быстрое возведение по модулю'''
-    y = 1
-    binary_x = decimal_to_binary(x)
+    result = 1
+    x = x % p
 
-    for bit in binary_x:
-        y = (y * y) % p
-        if bit == '1':
-            y = (y * a) % p
+    while a > 0:
+        if a % 2 == 1:
+            result = (result * x) % p
+        a = a // 2
+        x = (x * x) % p
 
-    return y
+    return result
 
 
-def miller_test(n, k=50):
-    '''
-    Проверка числа на простоту с помощью
-    теста Миллера-Рабина
-    '''
+def is_prime_trial_division(n):
+    '''Проверка числа на простоту методом перебора делителей'''
+    if n <= 1:
+        return False
+    if n <= 3:
+        return True
+    if n % 2 == 0 or n % 3 == 0:
+        return False
+    i = 5
+    while i * i <= n:
+        if n % i == 0 or n % (i + 2) == 0:
+            return False
+        i += 6
+    return True
+
+
+def miller_test(n):
+    '''Проверка числа на простоту с помощью теста Миллера-Рабина'''
+    k = 25
+    if n <= 1:
+        return False
+
+    if n <= 3:
+        return True
+
+    if n % 2 == 0:
+        return False
+
+    if is_prime_trial_division(n):
+        return n
+
     d = n - 1
+    s = 0
+    while d % 2 == 0:
+        d //= 2
+        s += 1
+
     for _ in range(k):
-        a = 2 + random.randint(0, n - 4)
+        a = random.randint(2, n - 2)
         x = fast_module_exp(a, d, n)
 
         if x == 1 or x == n - 1:
             continue
 
-        while d != n - 1:
+        for _ in range(s - 1):
             x = (x * x) % n
-            d *= 2
-
-            if x == 1:
-                return False
 
             if x == n - 1:
                 break
-
-        if x != n - 1:
+        else:
             return False
 
-    return n  # Возвращаем простое число
+    return n
 
 
 def generate_prime():
@@ -67,19 +99,19 @@ def generate_prime():
             P = 2 * prime_Q + 1
             prime_P = miller_test(P)
             if prime_P:
-                return prime_Q, P
+                return prime_Q, prime_P
 
 
 def g_mod_P(Q, P):
-    '''Генерация g'''
-    g = 0
-    while fast_module_exp(g, Q, P) == 1:
+    '''Генерация числа g в соответствии с протоколом Диффи-Хеллмана'''
+    while True:
         g = random.randint(2, P - 1)
-    return g
+        if fast_module_exp(g, Q, P) != 1:
+            return g
 
 
 def diffie_hellman(Q, P):
-    '''Сборка всех ключей'''
+    '''Сборка всех ключей по протоколу Диффи-Хеллмана'''
     g = g_mod_P(Q, P)
     Xa = random.randint(1, P - 1)
     Xb = random.randint(1, P - 1)
@@ -91,16 +123,16 @@ def diffie_hellman(Q, P):
 
 
 if __name__ == '__main__':
-    while True:
-        Q, P = generate_prime()
-        Q, P, g, Xa, Xb, Ya, Yb, Zab, Zba = diffie_hellman(Q, P)
-        if Zab == Zba:
-            print(f'Q: {Q}, '
-                  f'P: {P} '
-                  f'g: {g}, '
-                  f'Xa: {Xa}, '
-                  f'Xb: {Xb}, '
-                  f'Ya: {Ya}, '
-                  f'Yb: {Yb} ')
-            print(f'Общий закрытый ключ создан: {Zab}')
-            break
+    Q, P = generate_prime()
+    Q, P, g, Xa, Xb, Ya, Yb, Zab, Zba = diffie_hellman(Q, P)
+    if Zab == Zba:
+        print(f'Q: {Q}, '
+              f'P: {P} '
+              f'g: {g}, '
+              f'Xa: {Xa}, '
+              f'Xb: {Xb}, '
+              f'Ya: {Ya}, '
+              f'Yb: {Yb} ')
+        print(f'Общий закрытый ключ создан: {Zab}')
+    else:
+        print('Ошибка при генерации закрытого ключа.')
