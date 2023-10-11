@@ -29,5 +29,5 @@ def fast_module_exp(x, a, p):
     return y
 
 
-result = fast_module_exp(x, a, p)
+result = fast_module_exp(5, 3, 13)
 print(f'    Остаток (mod): {result}')
