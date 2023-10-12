@@ -1,24 +1,13 @@
-import random
+from random import randint
 
 from lib_lab_one import (fast_module_exp, extended_euclidean,
-                         miller_test)
-
-BIG_AMOUNT = 10000
-
-
-def generate_prime():
-    '''Генерация простого числа P'''
-    while True:
-        P = random.randint(2, BIG_AMOUNT)
-        prime_P = miller_test(P)
-        if prime_P:
-            return prime_P
+                         generate_prime)
 
 
 def generate_key_Alice(p):
     '''Генерация пары чисел Са, Da Алисы'''
     while True:
-        Ca = random.randint(2, p - 1)
+        Ca = randint(2, p - 1)
         gcd = extended_euclidean(Ca, p - 1)
         if gcd == 1:
             break
@@ -33,7 +22,7 @@ def generate_key_Alice(p):
 def generate_key_Bob(p):
     '''Генерация пары чисел Сb, Db Боба'''
     while True:
-        Cb = random.randint(2, p - 1)
+        Cb = randint(2, p - 1)
         gcd = extended_euclidean(Cb, p - 1)
         if gcd == 1:
             break
@@ -48,7 +37,7 @@ def generate_key_Bob(p):
 def shamir_algorithm(p):
     '''Основная логика Шамира'''
     print('---Создаем числа p, m...---')
-    m = random.randint(1, p - 1)
+    m = randint(1, p - 1)
     print(f'    Число m = {m}')
     print(f'    Число p = {p}')
     keys_Alice = generate_key_Alice(p)

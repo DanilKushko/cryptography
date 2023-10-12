@@ -1,5 +1,7 @@
 import random
 
+BIG_AMOUNT = 10**5
+
 
 def extended_euclidean(a, b):
     '''Алгоритм Евклида (mod)'''
@@ -79,3 +81,12 @@ def miller_test(n):
             return False
 
     return n
+
+
+def generate_prime():
+    '''Генерация простого числа P'''
+    while True:
+        amount = random.randint(2, BIG_AMOUNT)
+        prime_amount = miller_test(amount)
+        if prime_amount:
+            return prime_amount
