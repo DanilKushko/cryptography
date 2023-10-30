@@ -1,0 +1,1072 @@
+[
+    {
+        "label": "a",
+        "importPath": "my_const",
+        "description": "my_const",
+        "isExtraImport": true,
+        "detail": "my_const",
+        "documentation": {}
+    },
+    {
+        "label": "b",
+        "importPath": "my_const",
+        "description": "my_const",
+        "isExtraImport": true,
+        "detail": "my_const",
+        "documentation": {}
+    },
+    {
+        "label": "ONE_HUNDRED",
+        "importPath": "my_const",
+        "description": "my_const",
+        "isExtraImport": true,
+        "detail": "my_const",
+        "documentation": {}
+    },
+    {
+        "label": "VERY_LARGE_NUMBER",
+        "importPath": "my_const",
+        "description": "my_const",
+        "isExtraImport": true,
+        "detail": "my_const",
+        "documentation": {}
+    },
+    {
+        "label": "a",
+        "importPath": "my_const",
+        "description": "my_const",
+        "isExtraImport": true,
+        "detail": "my_const",
+        "documentation": {}
+    },
+    {
+        "label": "x",
+        "importPath": "my_const",
+        "description": "my_const",
+        "isExtraImport": true,
+        "detail": "my_const",
+        "documentation": {}
+    },
+    {
+        "label": "p",
+        "importPath": "my_const",
+        "description": "my_const",
+        "isExtraImport": true,
+        "detail": "my_const",
+        "documentation": {}
+    },
+    {
+        "label": "a",
+        "importPath": "my_const",
+        "description": "my_const",
+        "isExtraImport": true,
+        "detail": "my_const",
+        "documentation": {}
+    },
+    {
+        "label": "b",
+        "importPath": "my_const",
+        "description": "my_const",
+        "isExtraImport": true,
+        "detail": "my_const",
+        "documentation": {}
+    },
+    {
+        "label": "random",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "random",
+        "description": "random",
+        "detail": "random",
+        "documentation": {}
+    },
+    {
+        "label": "getrandbits",
+        "importPath": "random",
+        "description": "random",
+        "isExtraImport": true,
+        "detail": "random",
+        "documentation": {}
+    },
+    {
+        "label": "randint",
+        "importPath": "random",
+        "description": "random",
+        "isExtraImport": true,
+        "detail": "random",
+        "documentation": {}
+    },
+    {
+        "label": "randint",
+        "importPath": "random",
+        "description": "random",
+        "isExtraImport": true,
+        "detail": "random",
+        "documentation": {}
+    },
+    {
+        "label": "randint",
+        "importPath": "random",
+        "description": "random",
+        "isExtraImport": true,
+        "detail": "random",
+        "documentation": {}
+    },
+    {
+        "label": "randint",
+        "importPath": "random",
+        "description": "random",
+        "isExtraImport": true,
+        "detail": "random",
+        "documentation": {}
+    },
+    {
+        "label": "randint",
+        "importPath": "random",
+        "description": "random",
+        "isExtraImport": true,
+        "detail": "random",
+        "documentation": {}
+    },
+    {
+        "label": "unittest",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "unittest",
+        "description": "unittest",
+        "detail": "unittest",
+        "documentation": {}
+    },
+    {
+        "label": "logging",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "logging",
+        "description": "logging",
+        "detail": "logging",
+        "documentation": {}
+    },
+    {
+        "label": "decimal_to_binary",
+        "importPath": "diffie_hellman",
+        "description": "diffie_hellman",
+        "isExtraImport": true,
+        "detail": "diffie_hellman",
+        "documentation": {}
+    },
+    {
+        "label": "fast_module_exp",
+        "importPath": "diffie_hellman",
+        "description": "diffie_hellman",
+        "isExtraImport": true,
+        "detail": "diffie_hellman",
+        "documentation": {}
+    },
+    {
+        "label": "miller_test",
+        "importPath": "diffie_hellman",
+        "description": "diffie_hellman",
+        "isExtraImport": true,
+        "detail": "diffie_hellman",
+        "documentation": {}
+    },
+    {
+        "label": "generate_prime",
+        "importPath": "diffie_hellman",
+        "description": "diffie_hellman",
+        "isExtraImport": true,
+        "detail": "diffie_hellman",
+        "documentation": {}
+    },
+    {
+        "label": "g_mod_P",
+        "importPath": "diffie_hellman",
+        "description": "diffie_hellman",
+        "isExtraImport": true,
+        "detail": "diffie_hellman",
+        "documentation": {}
+    },
+    {
+        "label": "diffie_hellman",
+        "importPath": "diffie_hellman",
+        "description": "diffie_hellman",
+        "isExtraImport": true,
+        "detail": "diffie_hellman",
+        "documentation": {}
+    },
+    {
+        "label": "is_prime_trial_division",
+        "importPath": "diffie_hellman",
+        "description": "diffie_hellman",
+        "isExtraImport": true,
+        "detail": "diffie_hellman",
+        "documentation": {}
+    },
+    {
+        "label": "gmpy2",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "gmpy2",
+        "description": "gmpy2",
+        "detail": "gmpy2",
+        "documentation": {}
+    },
+    {
+        "label": "mpz",
+        "importPath": "gmpy2",
+        "description": "gmpy2",
+        "isExtraImport": true,
+        "detail": "gmpy2",
+        "documentation": {}
+    },
+    {
+        "label": "mpz",
+        "importPath": "gmpy2",
+        "description": "gmpy2",
+        "isExtraImport": true,
+        "detail": "gmpy2",
+        "documentation": {}
+    },
+    {
+        "label": "invert",
+        "importPath": "gmpy2",
+        "description": "gmpy2",
+        "isExtraImport": true,
+        "detail": "gmpy2",
+        "documentation": {}
+    },
+    {
+        "label": "sha256",
+        "importPath": "hashlib",
+        "description": "hashlib",
+        "isExtraImport": true,
+        "detail": "hashlib",
+        "documentation": {}
+    },
+    {
+        "label": "fast_module_exp",
+        "importPath": "castom_lab_one",
+        "description": "castom_lab_one",
+        "isExtraImport": true,
+        "detail": "castom_lab_one",
+        "documentation": {}
+    },
+    {
+        "label": "extended_euclidean",
+        "importPath": "castom_lab_one",
+        "description": "castom_lab_one",
+        "isExtraImport": true,
+        "detail": "castom_lab_one",
+        "documentation": {}
+    },
+    {
+        "label": "prime_generate",
+        "importPath": "prime_generate",
+        "description": "prime_generate",
+        "isExtraImport": true,
+        "detail": "prime_generate",
+        "documentation": {}
+    },
+    {
+        "label": "fast_module_exp",
+        "importPath": "lib_lab_one",
+        "description": "lib_lab_one",
+        "isExtraImport": true,
+        "detail": "lib_lab_one",
+        "documentation": {}
+    },
+    {
+        "label": "extended_euclidean",
+        "importPath": "lib_lab_one",
+        "description": "lib_lab_one",
+        "isExtraImport": true,
+        "detail": "lib_lab_one",
+        "documentation": {}
+    },
+    {
+        "label": "generate_prime",
+        "importPath": "lib_lab_one",
+        "description": "lib_lab_one",
+        "isExtraImport": true,
+        "detail": "lib_lab_one",
+        "documentation": {}
+    },
+    {
+        "label": "generate_prime",
+        "importPath": "lib_lab_one",
+        "description": "lib_lab_one",
+        "isExtraImport": true,
+        "detail": "lib_lab_one",
+        "documentation": {}
+    },
+    {
+        "label": "fast_module_exp",
+        "importPath": "lib_lab_one",
+        "description": "lib_lab_one",
+        "isExtraImport": true,
+        "detail": "lib_lab_one",
+        "documentation": {}
+    },
+    {
+        "label": "extended_euclidean",
+        "importPath": "lib_lab_one",
+        "description": "lib_lab_one",
+        "isExtraImport": true,
+        "detail": "lib_lab_one",
+        "documentation": {}
+    },
+    {
+        "label": "generate_prime",
+        "importPath": "lib_lab_one",
+        "description": "lib_lab_one",
+        "isExtraImport": true,
+        "detail": "lib_lab_one",
+        "documentation": {}
+    },
+    {
+        "label": "fast_module_exp",
+        "importPath": "lib_lab_one",
+        "description": "lib_lab_one",
+        "isExtraImport": true,
+        "detail": "lib_lab_one",
+        "documentation": {}
+    },
+    {
+        "label": "extended_euclidean",
+        "importPath": "lib_lab_one",
+        "description": "lib_lab_one",
+        "isExtraImport": true,
+        "detail": "lib_lab_one",
+        "documentation": {}
+    },
+    {
+        "label": "generate_prime",
+        "importPath": "lib_lab_one",
+        "description": "lib_lab_one",
+        "isExtraImport": true,
+        "detail": "lib_lab_one",
+        "documentation": {}
+    },
+    {
+        "label": "shamir_algorithm",
+        "importPath": "shamir",
+        "description": "shamir",
+        "isExtraImport": true,
+        "detail": "shamir",
+        "documentation": {}
+    },
+    {
+        "label": "bob_think",
+        "importPath": "el_gamal",
+        "description": "el_gamal",
+        "isExtraImport": true,
+        "detail": "el_gamal",
+        "documentation": {}
+    },
+    {
+        "label": "alice_think",
+        "importPath": "rsa",
+        "description": "rsa",
+        "isExtraImport": true,
+        "detail": "rsa",
+        "documentation": {}
+    },
+    {
+        "label": "bob_decryption",
+        "importPath": "rsa",
+        "description": "rsa",
+        "isExtraImport": true,
+        "detail": "rsa",
+        "documentation": {}
+    },
+    {
+        "label": "generate_random_key",
+        "importPath": "vernama",
+        "description": "vernama",
+        "isExtraImport": true,
+        "detail": "vernama",
+        "documentation": {}
+    },
+    {
+        "label": "encrypt",
+        "importPath": "vernama",
+        "description": "vernama",
+        "isExtraImport": true,
+        "detail": "vernama",
+        "documentation": {}
+    },
+    {
+        "label": "decrypt",
+        "importPath": "vernama",
+        "description": "vernama",
+        "isExtraImport": true,
+        "detail": "vernama",
+        "documentation": {}
+    },
+    {
+        "label": "GCD",
+        "kind": 2,
+        "importPath": "experiment.bit.euclid",
+        "description": "experiment.bit.euclid",
+        "peekOfCode": "def GCD(a, b):\n    if b != 0:\n        return GCD(b, a % b)\n    else:\n        return a\ndef extended_gcd(a, b):\n    if a == 0:\n        return (b, 0, 1)\n    else:\n        gcd, x, y = extended_gcd(b % a, a)",
+        "detail": "experiment.bit.euclid",
+        "documentation": {}
+    },
+    {
+        "label": "extended_gcd",
+        "kind": 2,
+        "importPath": "experiment.bit.euclid",
+        "description": "experiment.bit.euclid",
+        "peekOfCode": "def extended_gcd(a, b):\n    if a == 0:\n        return (b, 0, 1)\n    else:\n        gcd, x, y = extended_gcd(b % a, a)\n        return (gcd, y - (b // a) * x, x)\ngcd_value = GCD(a, b)\nextended_gcd_values = extended_gcd(a, b)\nprint(f'Наибольший общий делитель: {gcd_value}')\nprint(f'Расширенный алгоритм Евклида:'",
+        "detail": "experiment.bit.euclid",
+        "documentation": {}
+    },
+    {
+        "label": "gcd_value",
+        "kind": 5,
+        "importPath": "experiment.bit.euclid",
+        "description": "experiment.bit.euclid",
+        "peekOfCode": "gcd_value = GCD(a, b)\nextended_gcd_values = extended_gcd(a, b)\nprint(f'Наибольший общий делитель: {gcd_value}')\nprint(f'Расширенный алгоритм Евклида:'\n      f' x = {extended_gcd_values[1]}, y = {extended_gcd_values[2]}')",
+        "detail": "experiment.bit.euclid",
+        "documentation": {}
+    },
+    {
+        "label": "extended_gcd_values",
+        "kind": 5,
+        "importPath": "experiment.bit.euclid",
+        "description": "experiment.bit.euclid",
+        "peekOfCode": "extended_gcd_values = extended_gcd(a, b)\nprint(f'Наибольший общий делитель: {gcd_value}')\nprint(f'Расширенный алгоритм Евклида:'\n      f' x = {extended_gcd_values[1]}, y = {extended_gcd_values[2]}')",
+        "detail": "experiment.bit.euclid",
+        "documentation": {}
+    },
+    {
+        "label": "GCD",
+        "kind": 2,
+        "importPath": "experiment.prime_miiler",
+        "description": "experiment.prime_miiler",
+        "peekOfCode": "def GCD(a, b):\n    if b != 0:\n        return GCD(b, a % b)\n    else:\n        return a\ndef extended_gcd(a, b):\n    if a == 0:\n        return (b, 0, 1)\n    else:\n        gcd, x, y = extended_gcd(b % a, a)",
+        "detail": "experiment.prime_miiler",
+        "documentation": {}
+    },
+    {
+        "label": "extended_gcd",
+        "kind": 2,
+        "importPath": "experiment.prime_miiler",
+        "description": "experiment.prime_miiler",
+        "peekOfCode": "def extended_gcd(a, b):\n    if a == 0:\n        return (b, 0, 1)\n    else:\n        gcd, x, y = extended_gcd(b % a, a)\n        return (gcd, y - (b // a) * x, x)\ndef decimal_to_binary(decimal_num):\n    if decimal_num == 0:\n        return '0'\n    binary_num = ''",
+        "detail": "experiment.prime_miiler",
+        "documentation": {}
+    },
+    {
+        "label": "decimal_to_binary",
+        "kind": 2,
+        "importPath": "experiment.prime_miiler",
+        "description": "experiment.prime_miiler",
+        "peekOfCode": "def decimal_to_binary(decimal_num):\n    if decimal_num == 0:\n        return '0'\n    binary_num = ''\n    while decimal_num > 0:\n        remainder = decimal_num % 2\n        binary_num = str(remainder) + binary_num\n        decimal_num = decimal_num // 2\n    return binary_num\ndef fast_module_exp(x, a, p):",
+        "detail": "experiment.prime_miiler",
+        "documentation": {}
+    },
+    {
+        "label": "fast_module_exp",
+        "kind": 2,
+        "importPath": "experiment.prime_miiler",
+        "description": "experiment.prime_miiler",
+        "peekOfCode": "def fast_module_exp(x, a, p):\n    y = 1\n    binary_x = decimal_to_binary(x)\n    for x in binary_x:\n        y = (y * y) % p\n        if x == '1':\n            y = (y * a) % p\n    return y\ndef miller_test(n, k=50):\n    d = n - 1",
+        "detail": "experiment.prime_miiler",
+        "documentation": {}
+    },
+    {
+        "label": "miller_test",
+        "kind": 2,
+        "importPath": "experiment.prime_miiler",
+        "description": "experiment.prime_miiler",
+        "peekOfCode": "def miller_test(n, k=50):\n    d = n - 1\n    for _ in range(k):\n        a = 2 + random.randint(0, n - 4)\n        x = fast_module_exp(a, d, n)\n        if x == 1 or x == n - 1:\n            continue\n        while d != n - 1:\n            x = (x * x) % n\n            d *= 2",
+        "detail": "experiment.prime_miiler",
+        "documentation": {}
+    },
+    {
+        "label": "generate_prime",
+        "kind": 2,
+        "importPath": "experiment.prime_miiler",
+        "description": "experiment.prime_miiler",
+        "peekOfCode": "def generate_prime():\n    while True:\n        Q = random.randint(1, 100)\n        if miller_test(Q):\n            return Q\nprime_number = generate_prime()\nprint(\"Простое число:\", prime_number)",
+        "detail": "experiment.prime_miiler",
+        "documentation": {}
+    },
+    {
+        "label": "prime_number",
+        "kind": 5,
+        "importPath": "experiment.prime_miiler",
+        "description": "experiment.prime_miiler",
+        "peekOfCode": "prime_number = generate_prime()\nprint(\"Простое число:\", prime_number)",
+        "detail": "experiment.prime_miiler",
+        "documentation": {}
+    },
+    {
+        "label": "decimal_to_binary",
+        "kind": 2,
+        "importPath": "lab_one.diffie_hellman",
+        "description": "lab_one.diffie_hellman",
+        "peekOfCode": "def decimal_to_binary(decimal_num):\n    '''Перевод из двоичной в десятичную'''\n    if decimal_num == 0:\n        return '0'\n    binary_num = ''\n    while decimal_num > 0:\n        remainder = decimal_num % 2\n        binary_num = str(remainder) + binary_num\n        decimal_num = decimal_num // 2\n    return binary_num",
+        "detail": "lab_one.diffie_hellman",
+        "documentation": {}
+    },
+    {
+        "label": "fast_module_exp",
+        "kind": 2,
+        "importPath": "lab_one.diffie_hellman",
+        "description": "lab_one.diffie_hellman",
+        "peekOfCode": "def fast_module_exp(x, a, p):\n    '''Быстрое возведение по модулю'''\n    result = 1\n    x = x % p\n    while a > 0:\n        if a % 2 == 1:\n            result = (result * x) % p\n        a = a // 2\n        x = (x * x) % p\n    return result",
+        "detail": "lab_one.diffie_hellman",
+        "documentation": {}
+    },
+    {
+        "label": "is_prime_trial_division",
+        "kind": 2,
+        "importPath": "lab_one.diffie_hellman",
+        "description": "lab_one.diffie_hellman",
+        "peekOfCode": "def is_prime_trial_division(n):\n    '''Проверка числа на простоту методом перебора делителей'''\n    if n <= 1:\n        return False\n    if n <= 3:\n        return True\n    if n % 2 == 0 or n % 3 == 0:\n        return False\n    i = 5\n    while i * i <= n:",
+        "detail": "lab_one.diffie_hellman",
+        "documentation": {}
+    },
+    {
+        "label": "miller_test",
+        "kind": 2,
+        "importPath": "lab_one.diffie_hellman",
+        "description": "lab_one.diffie_hellman",
+        "peekOfCode": "def miller_test(n):\n    '''Проверка числа на простоту с помощью теста Миллера-Рабина'''\n    k = 25\n    if n <= 1:\n        return False\n    if n <= 3:\n        return True\n    if n % 2 == 0:\n        return False\n    if is_prime_trial_division(n):",
+        "detail": "lab_one.diffie_hellman",
+        "documentation": {}
+    },
+    {
+        "label": "generate_prime",
+        "kind": 2,
+        "importPath": "lab_one.diffie_hellman",
+        "description": "lab_one.diffie_hellman",
+        "peekOfCode": "def generate_prime():\n    '''Генерация числа Софи Жермен Q и безопасного числа P'''\n    while True:\n        Q = random.randint(ONE_HUNDRED, VERY_LARGE_NUMBER)\n        prime_Q = miller_test(Q)\n        if prime_Q:\n            P = 2 * prime_Q + 1\n            prime_P = miller_test(P)\n            if prime_P:\n                return prime_Q, prime_P",
+        "detail": "lab_one.diffie_hellman",
+        "documentation": {}
+    },
+    {
+        "label": "g_mod_P",
+        "kind": 2,
+        "importPath": "lab_one.diffie_hellman",
+        "description": "lab_one.diffie_hellman",
+        "peekOfCode": "def g_mod_P(Q, P):\n    '''Генерация числа g в соответствии с протоколом Диффи-Хеллмана'''\n    while True:\n        g = random.randint(2, P - 1)\n        if fast_module_exp(g, Q, P) != 1:\n            return g\ndef diffie_hellman(Q, P):\n    '''Сборка всех ключей по протоколу Диффи-Хеллмана'''\n    g = g_mod_P(Q, P)\n    Xa = random.randint(1, P - 1)",
+        "detail": "lab_one.diffie_hellman",
+        "documentation": {}
+    },
+    {
+        "label": "diffie_hellman",
+        "kind": 2,
+        "importPath": "lab_one.diffie_hellman",
+        "description": "lab_one.diffie_hellman",
+        "peekOfCode": "def diffie_hellman(Q, P):\n    '''Сборка всех ключей по протоколу Диффи-Хеллмана'''\n    g = g_mod_P(Q, P)\n    Xa = random.randint(1, P - 1)\n    Xb = random.randint(1, P - 1)\n    Ya = fast_module_exp(g, Xa, P)\n    Yb = fast_module_exp(g, Xb, P)\n    Zab = fast_module_exp(Yb, Xa, P)\n    Zba = fast_module_exp(Ya, Xb, P)\n    return Q, P, g, Xa, Xb, Ya, Yb, Zab, Zba",
+        "detail": "lab_one.diffie_hellman",
+        "documentation": {}
+    },
+    {
+        "label": "decimal_to_binary",
+        "kind": 2,
+        "importPath": "lab_one.exponent_module",
+        "description": "lab_one.exponent_module",
+        "peekOfCode": "def decimal_to_binary(decimal_num):\n    if decimal_num == 0:\n        return '0'\n    binary_num = ''\n    while decimal_num > 0:\n        remainder = decimal_num % 2\n        binary_num = str(remainder) + binary_num\n        decimal_num = decimal_num // 2\n    return binary_num\ndef fast_module_exp(x, a, p):",
+        "detail": "lab_one.exponent_module",
+        "documentation": {}
+    },
+    {
+        "label": "fast_module_exp",
+        "kind": 2,
+        "importPath": "lab_one.exponent_module",
+        "description": "lab_one.exponent_module",
+        "peekOfCode": "def fast_module_exp(x, a, p):\n    y = 1\n    binary_x = decimal_to_binary(x)\n    for x in binary_x:\n        y = (y * y) % p\n        if x == '1':\n            y = (y * a) % p\n    return y\nresult = fast_module_exp(5, 3, 13)\nprint(f'    Остаток (mod): {result}')",
+        "detail": "lab_one.exponent_module",
+        "documentation": {}
+    },
+    {
+        "label": "result",
+        "kind": 5,
+        "importPath": "lab_one.exponent_module",
+        "description": "lab_one.exponent_module",
+        "peekOfCode": "result = fast_module_exp(5, 3, 13)\nprint(f'    Остаток (mod): {result}')",
+        "detail": "lab_one.exponent_module",
+        "documentation": {}
+    },
+    {
+        "label": "extended_euclidean",
+        "kind": 2,
+        "importPath": "lab_one.extended_euclidean",
+        "description": "lab_one.extended_euclidean",
+        "peekOfCode": "def extended_euclidean(a, b):\n    U = [a, 1, 0]\n    V = [b, 0, 1]\n    T = [0, 0, 0]\n    q = 0\n    while V[0] != 0:\n        q = U[0] // V[0]\n        T[0] = U[0] % V[0]\n        T[1] = U[1] - q * V[1]\n        T[2] = U[2] - q * V[2]",
+        "detail": "lab_one.extended_euclidean",
+        "documentation": {}
+    },
+    {
+        "label": "resulteuclid",
+        "kind": 2,
+        "importPath": "lab_one.extended_euclidean",
+        "description": "lab_one.extended_euclidean",
+        "peekOfCode": "def resulteuclid():\n    print(f'Результат НОД: {result[0]}')\n    print(f'Результат: gcd⁡({a},{b}),x,y)='\n          f'({result[1]},{result[2]})')\nresulteuclid()",
+        "detail": "lab_one.extended_euclidean",
+        "documentation": {}
+    },
+    {
+        "label": "result",
+        "kind": 5,
+        "importPath": "lab_one.extended_euclidean",
+        "description": "lab_one.extended_euclidean",
+        "peekOfCode": "result = extended_euclidean(a, b)\ndef resulteuclid():\n    print(f'Результат НОД: {result[0]}')\n    print(f'Результат: gcd⁡({a},{b}),x,y)='\n          f'({result[1]},{result[2]})')\nresulteuclid()",
+        "detail": "lab_one.extended_euclidean",
+        "documentation": {}
+    },
+    {
+        "label": "a",
+        "kind": 5,
+        "importPath": "lab_one.my_const",
+        "description": "lab_one.my_const",
+        "peekOfCode": "a = 171\nx = 1000000\np = 73\nb = 456\nONE_HUNDRED = 1000\nVERY_LARGE_NUMBER = 10000000000",
+        "detail": "lab_one.my_const",
+        "documentation": {}
+    },
+    {
+        "label": "x",
+        "kind": 5,
+        "importPath": "lab_one.my_const",
+        "description": "lab_one.my_const",
+        "peekOfCode": "x = 1000000\np = 73\nb = 456\nONE_HUNDRED = 1000\nVERY_LARGE_NUMBER = 10000000000",
+        "detail": "lab_one.my_const",
+        "documentation": {}
+    },
+    {
+        "label": "p",
+        "kind": 5,
+        "importPath": "lab_one.my_const",
+        "description": "lab_one.my_const",
+        "peekOfCode": "p = 73\nb = 456\nONE_HUNDRED = 1000\nVERY_LARGE_NUMBER = 10000000000",
+        "detail": "lab_one.my_const",
+        "documentation": {}
+    },
+    {
+        "label": "b",
+        "kind": 5,
+        "importPath": "lab_one.my_const",
+        "description": "lab_one.my_const",
+        "peekOfCode": "b = 456\nONE_HUNDRED = 1000\nVERY_LARGE_NUMBER = 10000000000",
+        "detail": "lab_one.my_const",
+        "documentation": {}
+    },
+    {
+        "label": "ONE_HUNDRED",
+        "kind": 5,
+        "importPath": "lab_one.my_const",
+        "description": "lab_one.my_const",
+        "peekOfCode": "ONE_HUNDRED = 1000\nVERY_LARGE_NUMBER = 10000000000",
+        "detail": "lab_one.my_const",
+        "documentation": {}
+    },
+    {
+        "label": "VERY_LARGE_NUMBER",
+        "kind": 5,
+        "importPath": "lab_one.my_const",
+        "description": "lab_one.my_const",
+        "peekOfCode": "VERY_LARGE_NUMBER = 10000000000",
+        "detail": "lab_one.my_const",
+        "documentation": {}
+    },
+    {
+        "label": "DiffieHelmanTests",
+        "kind": 6,
+        "importPath": "lab_one.tests",
+        "description": "lab_one.tests",
+        "peekOfCode": "class DiffieHelmanTests(unittest.TestCase):\n    def test_decimal_to_binary(self):\n        self.assertEqual(decimal_to_binary(0), '0')\n        self.assertEqual(decimal_to_binary(5), '101')\n        self.assertEqual(decimal_to_binary(10), '1010')\n        self.assertEqual(decimal_to_binary(25), '11001')\n    def test_fast_module_exp(self):\n        self.assertEqual(fast_module_exp(2, 3, 5), 3)\n        self.assertEqual(fast_module_exp(2, 4, 7), 2)\n        self.assertEqual(fast_module_exp(3, 3, 10), 7)",
+        "detail": "lab_one.tests",
+        "documentation": {}
+    },
+    {
+        "label": "logger",
+        "kind": 5,
+        "importPath": "lab_one.tests",
+        "description": "lab_one.tests",
+        "peekOfCode": "logger = logging.getLogger(__name__)\nclass DiffieHelmanTests(unittest.TestCase):\n    def test_decimal_to_binary(self):\n        self.assertEqual(decimal_to_binary(0), '0')\n        self.assertEqual(decimal_to_binary(5), '101')\n        self.assertEqual(decimal_to_binary(10), '1010')\n        self.assertEqual(decimal_to_binary(25), '11001')\n    def test_fast_module_exp(self):\n        self.assertEqual(fast_module_exp(2, 3, 5), 3)\n        self.assertEqual(fast_module_exp(2, 4, 7), 2)",
+        "detail": "lab_one.tests",
+        "documentation": {}
+    },
+    {
+        "label": "extended_euclidean",
+        "kind": 2,
+        "importPath": "lab_three.castom_lab_one",
+        "description": "lab_three.castom_lab_one",
+        "peekOfCode": "def extended_euclidean(a, b):\n    '''Алгоритм Евклида (mod)'''\n    U = mpz(a)\n    V = mpz(b)\n    while V != 0:\n        U, V = V, U % V\n    return int(U)\ndef fast_module_exp(x, a, p):\n    '''Быстрое возведение по модулю'''\n    x = mpz(x)",
+        "detail": "lab_three.castom_lab_one",
+        "documentation": {}
+    },
+    {
+        "label": "fast_module_exp",
+        "kind": 2,
+        "importPath": "lab_three.castom_lab_one",
+        "description": "lab_three.castom_lab_one",
+        "peekOfCode": "def fast_module_exp(x, a, p):\n    '''Быстрое возведение по модулю'''\n    x = mpz(x)\n    result = mpz(1)\n    x = x % p\n    a = mpz(a)\n    while a > 0:\n        if a % 2 == 1:\n            result = (result * x) % p\n        a = a // 2",
+        "detail": "lab_three.castom_lab_one",
+        "documentation": {}
+    },
+    {
+        "label": "miller_test",
+        "kind": 2,
+        "importPath": "lab_three.prime_generate",
+        "description": "lab_three.prime_generate",
+        "peekOfCode": "def miller_test(n: int, k: int) -> bool:\n    '''\n    Проверка числа на простоту с помощью теста Миллера-Рабина.\n    '''\n    if n <= 1:\n        return False\n    if n <= 3:\n        return True\n    if n % 2 == 0:\n        return False",
+        "detail": "lab_three.prime_generate",
+        "documentation": {}
+    },
+    {
+        "label": "generate_prime_and_check",
+        "kind": 2,
+        "importPath": "lab_three.prime_generate",
+        "description": "lab_three.prime_generate",
+        "peekOfCode": "def generate_prime_and_check(bits: int, k: int) -> int:\n    '''\n    Генерация простого числа длиной указанных бит,\n    а также вызов проверок на просту\n    '''\n    while True:\n        candidate = getrandbits(bits)\n        if candidate % 2 == 0:\n            candidate += 1\n        if candidate < 3:",
+        "detail": "lab_three.prime_generate",
+        "documentation": {}
+    },
+    {
+        "label": "return_big_amount",
+        "kind": 2,
+        "importPath": "lab_three.prime_generate",
+        "description": "lab_three.prime_generate",
+        "peekOfCode": "def return_big_amount() -> int:\n    '''\n    Возврат большого числа указанных бит\n    '''\n    large_prime = generate_prime_and_check(BITS, K)\n    return large_prime\ndef prime_generate() -> int:\n    '''\n    Дополнительная проверка\n    '''",
+        "detail": "lab_three.prime_generate",
+        "documentation": {}
+    },
+    {
+        "label": "prime_generate",
+        "kind": 2,
+        "importPath": "lab_three.prime_generate",
+        "description": "lab_three.prime_generate",
+        "peekOfCode": "def prime_generate() -> int:\n    '''\n    Дополнительная проверка\n    '''\n    amount = int(return_big_amount())\n    number_to_check = gmpy2.mpz(amount)\n    if miller_test(number_to_check, K):\n        return number_to_check\n    else:\n        return 'Error'",
+        "detail": "lab_three.prime_generate",
+        "documentation": {}
+    },
+    {
+        "label": "BITS",
+        "kind": 5,
+        "importPath": "lab_three.prime_generate",
+        "description": "lab_three.prime_generate",
+        "peekOfCode": "BITS = 156\n# Кол-во итерраций проверки на простоту\nK = 5\ndef miller_test(n: int, k: int) -> bool:\n    '''\n    Проверка числа на простоту с помощью теста Миллера-Рабина.\n    '''\n    if n <= 1:\n        return False\n    if n <= 3:",
+        "detail": "lab_three.prime_generate",
+        "documentation": {}
+    },
+    {
+        "label": "K",
+        "kind": 5,
+        "importPath": "lab_three.prime_generate",
+        "description": "lab_three.prime_generate",
+        "peekOfCode": "K = 5\ndef miller_test(n: int, k: int) -> bool:\n    '''\n    Проверка числа на простоту с помощью теста Миллера-Рабина.\n    '''\n    if n <= 1:\n        return False\n    if n <= 3:\n        return True\n    if n % 2 == 0:",
+        "detail": "lab_three.prime_generate",
+        "documentation": {}
+    },
+    {
+        "label": "generate_P_Q",
+        "kind": 2,
+        "importPath": "lab_three.sign_rsa",
+        "description": "lab_three.sign_rsa",
+        "peekOfCode": "def generate_P_Q():\n    '''Генерация P, Q'''\n    P = prime_generate()\n    Q = prime_generate()\n    while P == Q:\n        Q = prime_generate()\n    print('\\nЧисла P, Q созданы!\\n')\n    return P, Q\ndef born_d(P, Q):\n    '''",
+        "detail": "lab_three.sign_rsa",
+        "documentation": {}
+    },
+    {
+        "label": "born_d",
+        "kind": 2,
+        "importPath": "lab_three.sign_rsa",
+        "description": "lab_three.sign_rsa",
+        "peekOfCode": "def born_d(P, Q):\n    '''\n    Вычисление d, c (аналогично 2 лабе).\n    но с ипользованием GMP.\n    mpz - тип данных, для работы с большими числами.\n    invert - обратный элемент для d по модулю f\n    '''\n    phi_N = (mpz(P) - 1) * (mpz(Q) - 1)\n    d = None\n    while d is None:",
+        "detail": "lab_three.sign_rsa",
+        "documentation": {}
+    },
+    {
+        "label": "alice_hash",
+        "kind": 2,
+        "importPath": "lab_three.sign_rsa",
+        "description": "lab_three.sign_rsa",
+        "peekOfCode": "def alice_hash(N, m, c):\n    '''Алиса подпишет документ m'''\n    print(f'\\tСодержание документа: {m}')\n    h = int(sha256(m.encode('utf-8')).hexdigest(), 16)\n    print(f'\\tХеш (h): {h}\\n\\n')\n    if h < N:\n        s = fast_module_exp(h, c, N)\n        return m, s\n    else:\n        print('\\tОпаньки, а хеш больше числа N')",
+        "detail": "lab_three.sign_rsa",
+        "documentation": {}
+    },
+    {
+        "label": "bob_unpacked_hash",
+        "kind": 2,
+        "importPath": "lab_three.sign_rsa",
+        "description": "lab_three.sign_rsa",
+        "peekOfCode": "def bob_unpacked_hash(m, s, N, d):\n    '''Боб и значение е'''\n    print('Боб получил(<m, s> и N, d): ')\n    print(f'm: {m}')\n    print(f's = {s}')\n    print(f'd = {d}')\n    print(f'N = {N}')\n    h = int(sha256(m.encode('utf-8')).hexdigest(), 16)\n    if s < N:\n        e = fast_module_exp(s, d, N)",
+        "detail": "lab_three.sign_rsa",
+        "documentation": {}
+    },
+    {
+        "label": "generate_g",
+        "kind": 2,
+        "importPath": "lab_two.el_gamal",
+        "description": "lab_two.el_gamal",
+        "peekOfCode": "def generate_g(p):\n    '''Генерация числа g для Боба'''\n    while True:\n        g = randint(2, p - 1)\n        if extended_euclidean(g, p - 1) == 1:\n            return g\ndef create_secret_Bob(p, g):\n    '''Вычисление x, у Боба'''\n    x = randint(2, p - 1)\n    y = fast_module_exp(g, x, p)",
+        "detail": "lab_two.el_gamal",
+        "documentation": {}
+    },
+    {
+        "label": "create_secret_Bob",
+        "kind": 2,
+        "importPath": "lab_two.el_gamal",
+        "description": "lab_two.el_gamal",
+        "peekOfCode": "def create_secret_Bob(p, g):\n    '''Вычисление x, у Боба'''\n    x = randint(2, p - 1)\n    y = fast_module_exp(g, x, p)\n    return x, y\ndef alice_create_k(p, g):\n    x, y = create_secret_Bob(p, g)\n    m = randint(1, p - 1)\n    k = randint(2, p - 1)\n    a = fast_module_exp(g, k, p)",
+        "detail": "lab_two.el_gamal",
+        "documentation": {}
+    },
+    {
+        "label": "alice_create_k",
+        "kind": 2,
+        "importPath": "lab_two.el_gamal",
+        "description": "lab_two.el_gamal",
+        "peekOfCode": "def alice_create_k(p, g):\n    x, y = create_secret_Bob(p, g)\n    m = randint(1, p - 1)\n    k = randint(2, p - 1)\n    a = fast_module_exp(g, k, p)\n    b = (m * fast_module_exp(y, k, p))\n    return x, y, a, b, m\ndef bob_think():\n    p = generate_prime()\n    g = generate_g(p)",
+        "detail": "lab_two.el_gamal",
+        "documentation": {}
+    },
+    {
+        "label": "bob_think",
+        "kind": 2,
+        "importPath": "lab_two.el_gamal",
+        "description": "lab_two.el_gamal",
+        "peekOfCode": "def bob_think():\n    p = generate_prime()\n    g = generate_g(p)\n    x, y, a, b, m = alice_create_k(p, g)\n    a_exp = p - 1 - x\n    m_rev = (b * fast_module_exp(a, a_exp, p)) % p\n    print('--Переменные шифра--')\n    print(f'    x = {x}')\n    print(f'    y = {y}')\n    print(f'    p = {p}')",
+        "detail": "lab_two.el_gamal",
+        "documentation": {}
+    },
+    {
+        "label": "extended_euclidean",
+        "kind": 2,
+        "importPath": "lab_two.lib_lab_one",
+        "description": "lab_two.lib_lab_one",
+        "peekOfCode": "def extended_euclidean(a, b):\n    '''Алгоритм Евклида (mod)'''\n    U = a\n    V = b\n    while V != 0:\n        U, V = V, U % V\n    return U\ndef fast_module_exp(x, a, p):\n    '''Быстрое возведение по модулю'''\n    result = 1",
+        "detail": "lab_two.lib_lab_one",
+        "documentation": {}
+    },
+    {
+        "label": "fast_module_exp",
+        "kind": 2,
+        "importPath": "lab_two.lib_lab_one",
+        "description": "lab_two.lib_lab_one",
+        "peekOfCode": "def fast_module_exp(x, a, p):\n    '''Быстрое возведение по модулю'''\n    result = 1\n    x = x % p\n    while a > 0:\n        if a % 2 == 1:\n            result = (result * x) % p\n        a = a // 2\n        x = (x * x) % p\n    return result",
+        "detail": "lab_two.lib_lab_one",
+        "documentation": {}
+    },
+    {
+        "label": "is_prime_trial_division",
+        "kind": 2,
+        "importPath": "lab_two.lib_lab_one",
+        "description": "lab_two.lib_lab_one",
+        "peekOfCode": "def is_prime_trial_division(n):\n    '''Проверка числа на простоту методом перебора делителей'''\n    if n <= 1:\n        return False\n    if n <= 3:\n        return True\n    if n % 2 == 0 or n % 3 == 0:\n        return False\n    i = 5\n    while i * i <= n:",
+        "detail": "lab_two.lib_lab_one",
+        "documentation": {}
+    },
+    {
+        "label": "miller_test",
+        "kind": 2,
+        "importPath": "lab_two.lib_lab_one",
+        "description": "lab_two.lib_lab_one",
+        "peekOfCode": "def miller_test(n):\n    '''Проверка числа на простоту с помощью теста Миллера-Рабина'''\n    k = 25\n    if n <= 1:\n        return False\n    if n <= 3:\n        return True\n    if n % 2 == 0:\n        return False\n    if is_prime_trial_division(n):",
+        "detail": "lab_two.lib_lab_one",
+        "documentation": {}
+    },
+    {
+        "label": "generate_prime",
+        "kind": 2,
+        "importPath": "lab_two.lib_lab_one",
+        "description": "lab_two.lib_lab_one",
+        "peekOfCode": "def generate_prime():\n    '''Генерация простого числа P'''\n    while True:\n        amount = random.randint(2, BIG_AMOUNT)\n        prime_amount = miller_test(amount)\n        if prime_amount:\n            return prime_amount",
+        "detail": "lab_two.lib_lab_one",
+        "documentation": {}
+    },
+    {
+        "label": "BIG_AMOUNT",
+        "kind": 5,
+        "importPath": "lab_two.lib_lab_one",
+        "description": "lab_two.lib_lab_one",
+        "peekOfCode": "BIG_AMOUNT = 10**4\ndef extended_euclidean(a, b):\n    '''Алгоритм Евклида (mod)'''\n    U = a\n    V = b\n    while V != 0:\n        U, V = V, U % V\n    return U\ndef fast_module_exp(x, a, p):\n    '''Быстрое возведение по модулю'''",
+        "detail": "lab_two.lib_lab_one",
+        "documentation": {}
+    },
+    {
+        "label": "shamir_start",
+        "kind": 2,
+        "importPath": "lab_two.main",
+        "description": "lab_two.main",
+        "peekOfCode": "def shamir_start():\n    p = generate_prime()\n    if p < 2:\n        print('p должно быть больше или равно 2')\n    else:\n        P = shamir_algorithm(p)\n        print(P)\ndef el_gamal_start():\n    bob_think()\ndef vernama_start():",
+        "detail": "lab_two.main",
+        "documentation": {}
+    },
+    {
+        "label": "el_gamal_start",
+        "kind": 2,
+        "importPath": "lab_two.main",
+        "description": "lab_two.main",
+        "peekOfCode": "def el_gamal_start():\n    bob_think()\ndef vernama_start():\n    message = input('Введите сообщение: ')\n    message_bytes = message.encode('utf-8')\n    key = generate_random_key(len(message_bytes))\n    encrypted_message = encrypt(message_bytes, key)\n    decrypted_message = decrypt(encrypted_message, key)\n    print(f'Исходное сообщение: {message_bytes.decode(\"utf-8\")}')\n    print(f'Зашифрованное сообщение: {encrypted_message}')",
+        "detail": "lab_two.main",
+        "documentation": {}
+    },
+    {
+        "label": "vernama_start",
+        "kind": 2,
+        "importPath": "lab_two.main",
+        "description": "lab_two.main",
+        "peekOfCode": "def vernama_start():\n    message = input('Введите сообщение: ')\n    message_bytes = message.encode('utf-8')\n    key = generate_random_key(len(message_bytes))\n    encrypted_message = encrypt(message_bytes, key)\n    decrypted_message = decrypt(encrypted_message, key)\n    print(f'Исходное сообщение: {message_bytes.decode(\"utf-8\")}')\n    print(f'Зашифрованное сообщение: {encrypted_message}')\n    print(f'Расшифрованное сообщение: {decrypted_message.decode(\"utf-8\")}')\ndef rsa_start():",
+        "detail": "lab_two.main",
+        "documentation": {}
+    },
+    {
+        "label": "rsa_start",
+        "kind": 2,
+        "importPath": "lab_two.main",
+        "description": "lab_two.main",
+        "peekOfCode": "def rsa_start():\n    Pb, Qb, N, d, c = bob_think()\n    print(f'Публичные ключи Боба: P = {Pb}, Q = {Qb}')\n    print(f'Закрытый и открытый ключи Боба: d = {d}, c = {c}')\n    e, m = alice_think(Pb, Qb, N, d, c)\n    print(f'Алиса отправляет зашифрованное сообщение (e): {e}')\n    print(f'Сообщение Алисы: m = {m}')\n    result = bob_decryption(e, c, N, m)\n    print(f'Боб дешифровал сообщение: {result}')\nif __name__ == '__main__':",
+        "detail": "lab_two.main",
+        "documentation": {}
+    },
+    {
+        "label": "a",
+        "kind": 5,
+        "importPath": "lab_two.my_const",
+        "description": "lab_two.my_const",
+        "peekOfCode": "a = 171\nx = 1000000\np = 73\nb = 456\nONE_HUNDRED = 1000\nVERY_LARGE_NUMBER = 10000000000",
+        "detail": "lab_two.my_const",
+        "documentation": {}
+    },
+    {
+        "label": "x",
+        "kind": 5,
+        "importPath": "lab_two.my_const",
+        "description": "lab_two.my_const",
+        "peekOfCode": "x = 1000000\np = 73\nb = 456\nONE_HUNDRED = 1000\nVERY_LARGE_NUMBER = 10000000000",
+        "detail": "lab_two.my_const",
+        "documentation": {}
+    },
+    {
+        "label": "p",
+        "kind": 5,
+        "importPath": "lab_two.my_const",
+        "description": "lab_two.my_const",
+        "peekOfCode": "p = 73\nb = 456\nONE_HUNDRED = 1000\nVERY_LARGE_NUMBER = 10000000000",
+        "detail": "lab_two.my_const",
+        "documentation": {}
+    },
+    {
+        "label": "b",
+        "kind": 5,
+        "importPath": "lab_two.my_const",
+        "description": "lab_two.my_const",
+        "peekOfCode": "b = 456\nONE_HUNDRED = 1000\nVERY_LARGE_NUMBER = 10000000000",
+        "detail": "lab_two.my_const",
+        "documentation": {}
+    },
+    {
+        "label": "ONE_HUNDRED",
+        "kind": 5,
+        "importPath": "lab_two.my_const",
+        "description": "lab_two.my_const",
+        "peekOfCode": "ONE_HUNDRED = 1000\nVERY_LARGE_NUMBER = 10000000000",
+        "detail": "lab_two.my_const",
+        "documentation": {}
+    },
+    {
+        "label": "VERY_LARGE_NUMBER",
+        "kind": 5,
+        "importPath": "lab_two.my_const",
+        "description": "lab_two.my_const",
+        "peekOfCode": "VERY_LARGE_NUMBER = 10000000000",
+        "detail": "lab_two.my_const",
+        "documentation": {}
+    },
+    {
+        "label": "generate_P_Q",
+        "kind": 2,
+        "importPath": "lab_two.rsa",
+        "description": "lab_two.rsa",
+        "peekOfCode": "def generate_P_Q():\n    '''Генерация чисел P и Q'''\n    while True:\n        P = generate_prime()\n        Q = generate_prime()\n        if P != Q:\n            return P, Q\ndef bob_think():\n    '''\n    Боб вычисляет:",
+        "detail": "lab_two.rsa",
+        "documentation": {}
+    },
+    {
+        "label": "bob_think",
+        "kind": 2,
+        "importPath": "lab_two.rsa",
+        "description": "lab_two.rsa",
+        "peekOfCode": "def bob_think():\n    '''\n    Боб вычисляет:\n    f = (P - 1)(Q - 1)\n    закрытый ключ - d\n    открытый ключ - c\n    '''\n    Pb, Qb = generate_P_Q()\n    N = Pb * Qb\n    f = (Pb - 1) * (Qb - 1)",
+        "detail": "lab_two.rsa",
+        "documentation": {}
+    },
+    {
+        "label": "alice_think",
+        "kind": 2,
+        "importPath": "lab_two.rsa",
+        "description": "lab_two.rsa",
+        "peekOfCode": "def alice_think(Pb, Qb, N, d, c):\n    '''Алиса получает числа Боба, формирует криптограмму'''\n    N = Pb * Qb\n    m = randint(1, N - 1)\n    e = fast_module_exp(m, d, N)\n    return e, m\ndef bob_decryption(e, c, N, m):\n    '''Боб делает дешифровку'''\n    m_res = fast_module_exp(e, c, N)\n    if m_res == m:",
+        "detail": "lab_two.rsa",
+        "documentation": {}
+    },
+    {
+        "label": "bob_decryption",
+        "kind": 2,
+        "importPath": "lab_two.rsa",
+        "description": "lab_two.rsa",
+        "peekOfCode": "def bob_decryption(e, c, N, m):\n    '''Боб делает дешифровку'''\n    m_res = fast_module_exp(e, c, N)\n    if m_res == m:\n        return m_res\n    else:\n        return 'Error'\nif __name__ == '__main__':\n    Pb, Qb, N, d, c = bob_think()\n    print(f'Публичные ключи Боба: P = {Pb}, Q = {Qb}')",
+        "detail": "lab_two.rsa",
+        "documentation": {}
+    },
+    {
+        "label": "generate_key_Alice",
+        "kind": 2,
+        "importPath": "lab_two.shamir",
+        "description": "lab_two.shamir",
+        "peekOfCode": "def generate_key_Alice(p):\n    '''Генерация пары чисел Са, Da Алисы'''\n    while True:\n        Ca = randint(2, p - 1)\n        gcd = extended_euclidean(Ca, p - 1)\n        if gcd == 1:\n            break\n    Da = 1\n    while (Ca * Da) % (p - 1) != 1:\n        Da += 1",
+        "detail": "lab_two.shamir",
+        "documentation": {}
+    },
+    {
+        "label": "generate_key_Bob",
+        "kind": 2,
+        "importPath": "lab_two.shamir",
+        "description": "lab_two.shamir",
+        "peekOfCode": "def generate_key_Bob(p):\n    '''Генерация пары чисел Сb, Db Боба'''\n    while True:\n        Cb = randint(2, p - 1)\n        gcd = extended_euclidean(Cb, p - 1)\n        if gcd == 1:\n            break\n    Db = 1\n    while (Cb * Db) % (p - 1) != 1:\n        Db += 1",
+        "detail": "lab_two.shamir",
+        "documentation": {}
+    },
+    {
+        "label": "shamir_algorithm",
+        "kind": 2,
+        "importPath": "lab_two.shamir",
+        "description": "lab_two.shamir",
+        "peekOfCode": "def shamir_algorithm(p):\n    '''Основная логика Шамира'''\n    print('---Создаем числа p, m...---')\n    m = randint(1, p - 1)\n    print(f'    Число m = {m}')\n    print(f'    Число p = {p}')\n    keys_Alice = generate_key_Alice(p)\n    keys_Bob = generate_key_Bob(p)\n    print('--Ключи Алисы--')\n    print(f'    Ca = {keys_Alice[0]}')",
+        "detail": "lab_two.shamir",
+        "documentation": {}
+    },
+    {
+        "label": "generate_random_key",
+        "kind": 2,
+        "importPath": "lab_two.vernama",
+        "description": "lab_two.vernama",
+        "peekOfCode": "def generate_random_key(message_length):\n    '''Генерация случайного ключа заданной длины'''\n    key_bytes = []\n    for _ in range(message_length):\n        random_byte = random.randint(0, 255)\n        key_bytes.append(random_byte)\n    key = bytes(key_bytes)\n    print(f'Сгенерированный ключ: {key}')\n    return key\ndef encrypt(message, key):",
+        "detail": "lab_two.vernama",
+        "documentation": {}
+    },
+    {
+        "label": "encrypt",
+        "kind": 2,
+        "importPath": "lab_two.vernama",
+        "description": "lab_two.vernama",
+        "peekOfCode": "def encrypt(message, key):\n    '''Проверка, что длина сообщения и ключа совпадает'''\n    if len(message) != len(key):\n        raise ValueError('Длина сообщения и ключа должна совпадать.')\n    print(message ^ key)\n    encrypted_message = []\n    for m, k in zip(message, key):\n        encrypted_byte = m ^ k\n        encrypted_message.append(encrypted_byte)\n    encrypted_message_bytes = bytes(encrypted_message)",
+        "detail": "lab_two.vernama",
+        "documentation": {}
+    },
+    {
+        "label": "decrypt",
+        "kind": 2,
+        "importPath": "lab_two.vernama",
+        "description": "lab_two.vernama",
+        "peekOfCode": "def decrypt(encrypted_message, key):\n    '''Проверка, что длина зашифрованного сообщения и ключа совпадает'''\n    if len(encrypted_message) != len(key):\n        raise ValueError('Длины сообщений и ключей не должны совпадать.')\n    decrypted_message = []\n    for e, k in zip(encrypted_message, key):\n        decrypted_byte = e ^ k\n        decrypted_message.append(decrypted_byte)\n    decrypted_message_bytes = bytes(decrypted_message)\n    return decrypted_message_bytes",
+        "detail": "lab_two.vernama",
+        "documentation": {}
+    }
+]

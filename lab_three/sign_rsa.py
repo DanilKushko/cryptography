@@ -1,52 +1,68 @@
-from hashlib import sha256
+'''
+    Часть 1.
+  "Подпись RSA"
+'''
 from random import randint
+from hashlib import sha256
+from gmpy2 import mpz, invert
 
-from lib_lab_one import generate_prime, extended_euclidean, fast_module_exp
+from castom_lab_one import fast_module_exp, extended_euclidean
+from prime_generate import prime_generate
 
 
 def generate_P_Q():
     '''Генерация P, Q'''
-    P = generate_prime()
-    Q = generate_prime()
+    P = prime_generate()
+    Q = prime_generate()
     while P == Q:
-        Q = generate_prime()
-    print('Числа P, Q получены!')
+        Q = prime_generate()
+    print('\nЧисла P, Q созданы!\n')
     return P, Q
 
 
 def born_d(P, Q):
-    '''Вычисление ключей c, d'''
-    f = (P - 1) * (Q - 1)
+    '''
+    Вычисление d, c (аналогично 2 лабе).
+    но с ипользованием GMP.
+    mpz - тип данных, для работы с большими числами.
+    invert - обратный элемент для d по модулю f
+    '''
+    phi_N = (mpz(P) - 1) * (mpz(Q) - 1)
 
-    while True:
-        d = randint(2, f - 1)
-        gcd = extended_euclidean(d, f)
-        if gcd == 1:
-            break
+    d = None
+    while d is None:
+        potential_d = mpz(randint(2, phi_N - 1))
+        if extended_euclidean(potential_d, phi_N) == 1:
+            d = potential_d
 
-    c = 1
-    while (d * c) % f != 1:
-        c += 1
+    c = invert(d, phi_N)
 
-    return f, d, c
+    return int(phi_N), int(d), int(c)
 
 
 def alice_hash(N, m, c):
     '''Алиса подпишет документ m'''
-    print(f' Содержание документа: {m}')
+    print(f'\tСодержание документа: {m}')
+
     h = int(sha256(m.encode('utf-8')).hexdigest(), 16)
+    print(f'\tХеш (h): {h}\n\n')
+
     if h < N:
         s = fast_module_exp(h, c, N)
         return m, s
+    else:
+        print('\tОпаньки, а хеш больше числа N')
+        return None
 
 
 def bob_unpacked_hash(m, s, N, d):
     '''Боб и значение е'''
-    print('Боб получил подписанный <m, s> и N, d')
+    print('Боб получил(<m, s> и N, d): ')
     print(f'm: {m}')
     print(f's = {s}')
     print(f'd = {d}')
     print(f'N = {N}')
+
     h = int(sha256(m.encode('utf-8')).hexdigest(), 16)
 
     if s < N:
@@ -54,7 +70,7 @@ def bob_unpacked_hash(m, s, N, d):
         print(f'e = {e}')
 
         if e == h:
-            return e
+            return (f'Боб вычислил е = {e}')
         else:
             return 'Error'
     else:
@@ -62,19 +78,22 @@ def bob_unpacked_hash(m, s, N, d):
 
 
 if __name__ == '__main__':
-    m = 'М'
-    print('Сейчас сгенерируются числа P, Q, P != Q...')
+    m = input('Заполните документ m: ')
     P, Q = generate_P_Q()
 
-    print(f'Числа получены. P = {P}, Q = {Q}.')
+    print('\tПолучаем числа P, Q')
+    print(f'\t\tP = {P} ')
+    print(f'\t\tQ = {Q}\n\n')
     N = P * Q
 
-    print('Вычислим F(N) = (P - 1)(Q - 1), получим d, c')
+    print('\tВычислим F(N) = (P - 1)(Q - 1), получим d, c')
     f, d, c = born_d(P, Q)
-    print(f'F(N) = (P - 1)(Q - 1) = {f} ')
-    print(f'Алиса публикует ключи d = {d}, c = {c}')
+    # print(f'\tF(N) = (P - 1)(Q - 1) = {f} ')
+    print('\tАлиса публикует ключи: ')
+    print(f'\t\td = {d}')
+    print(f'\t\tc = {c}\n\n')
 
-    print('Алиса сейчас вычислит h = H(m), h < N')
+    print('\tАлиса хеширует документ (h = H(m), h < N)')
     m, s = alice_hash(N, m, c)
 
     e = bob_unpacked_hash(m, s, N, d)
