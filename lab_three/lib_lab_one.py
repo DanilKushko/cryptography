@@ -1,6 +1,7 @@
 import random
 
-BIG_AMOUNT = 10**4
+BIG_AMOUNT = 10**9
+LITTLE_AMOUNT = 10**4
 
 
 def extended_euclidean(a, b):
@@ -86,7 +87,7 @@ def miller_test(n):
 def generate_prime():
     '''Генерация простого числа P'''
     while True:
-        amount = random.randint(2, BIG_AMOUNT)
+        amount = random.randint(LITTLE_AMOUNT, BIG_AMOUNT)
         prime_amount = miller_test(amount)
         if prime_amount:
             return prime_amount
