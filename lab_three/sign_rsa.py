@@ -1,5 +1,5 @@
 '''
-    Часть 1.
+    Часть 2.
   "Подпись RSA"
 '''
 from random import randint
@@ -78,7 +78,8 @@ def bob_unpacked_hash(m, s, N, d):
 
 
 if __name__ == '__main__':
-    m = input('Заполните документ m: ')
+    m = 'Кушко Данил с группы АБ-109 хорошо постарался и хочет 5'
+    # input('Заполните документ m: ')
     P, Q = generate_P_Q()
 
     print('\tПолучаем числа P, Q')
