@@ -1,6 +1,10 @@
 '''
     Часть 3.
   "Подпись ГОСТ"
+
+UPD: для корректной работы в файле
+    prime_generate в ф-ии generate_prime_and_check
+    рекомендуется передавать BITS_GHOST
 '''
 import random
 from hashlib import sha256

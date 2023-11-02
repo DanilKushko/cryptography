@@ -1,6 +1,10 @@
 '''
     Часть 2.
   "Подпись RSA"
+
+UPD: для корректной работы в файле
+    prime_generate в ф-ии generate_prime_and_check
+    рекомендуется передавать BITS_RSA
 '''
 from random import randint
 from hashlib import sha256
@@ -82,19 +86,19 @@ if __name__ == '__main__':
     # input('Заполните документ m: ')
     P, Q = generate_P_Q()
 
-    print('\tПолучаем числа P, Q')
-    print(f'\t\tP = {P} ')
-    print(f'\t\tQ = {Q}\n\n')
+    print('Получаем числа P, Q')
+    print(f'\tP = {P}')
+    print(f'\tQ = {Q}\n')
     N = P * Q
 
-    print('\tВычислим F(N) = (P - 1)(Q - 1), получим d, c')
+    print('Вычислим F(N) = (P - 1)(Q - 1), получим d, c')
     f, d, c = born_d(P, Q)
     # print(f'\tF(N) = (P - 1)(Q - 1) = {f} ')
     print('\tАлиса публикует ключи: ')
-    print(f'\t\td = {d}')
-    print(f'\t\tc = {c}\n\n')
+    print(f'\td = {d}')
+    print(f'\tc = {c}\n\n')
 
-    print('\tАлиса хеширует документ (h = H(m), h < N)')
+    print('Алиса хеширует документ (h = H(m), h < N)\n')
     m, s = alice_hash(N, m, c)
 
     e = bob_unpacked_hash(m, s, N, d)
