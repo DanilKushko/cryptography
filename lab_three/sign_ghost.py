@@ -81,7 +81,7 @@ def GOST():
     print('\tПолучаем число Q =')
     print(f'= {q}\n\n')
 
-    m = 'hello, my dear!'
+    m = 'Кушко Данил с группы АБ-109 хорошо постарался и хочет 5'
     # абонент получает хеш сообщения 0 < h < q
     h = hash(m, q)
     print(f'\tХеш (h): {h}\n\n')
@@ -99,6 +99,7 @@ def GOST():
 
     r, s, x = get_sign(a, p, q, h)
     print('\n\nДокумент подписан.\n')
+    print(f'r = {r},\ns = {s}')
 
     choice = int(input('Если желаете увидеть проверку, нажмите 1  '))
     if choice == 1:

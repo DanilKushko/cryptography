@@ -102,3 +102,4 @@ if __name__ == '__main__':
     m, s = alice_hash(N, m, c)
 
     e = bob_unpacked_hash(m, s, N, d)
+    print(f's = {s}')

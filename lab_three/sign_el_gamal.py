@@ -1,14 +1,6 @@
-'''
-    Часть 2.
-  "Подпись Эль - Гамаля"
-
-UPD: для корректной работы в файле
-    prime_generate в ф-ии generate_prime_and_check
-    рекомендуется передавать BITS_GAMAL
-'''
 from sympy import primitive_root
 from random import randint
-from hashlib import sha256
+from hashlib import sha224
 
 from prime_generate import prime_generate
 from castom_lab_one import (miller_test, fast_module_exp,
@@ -17,10 +9,22 @@ from my_const import K
 from test_el_gamal import test_el_gamal
 
 
+def mod_inverse(P):
+    '''Находит обратный элемент числа по модулю.'''
+    while True:
+        k = int(randint(1, P - 1))
+        if extended_euclidean(k, P - 1) == 1:
+            break
+
+    res = extended_euclidean(P - 1, k)
+    return int(k), int(res)
+
+
 def Alice_create_P_Q():
     '''
     Алиса выбирает такое число P,
-    которое P = 2 * Q + 1'''
+    которое P = 2 * Q + 1
+    '''
     print('Начинаем генерацию чисел P, Q...\n')
     while True:
         Q = prime_generate()
@@ -40,8 +44,8 @@ def find_primitive_root(P):
 def Alice_create_keys(g, P):
     '''
     Алиса формирует:
-        открытый ключ - y
-        закрытый ключ - х
+    открытый ключ - y
+    закрытый ключ - х
     '''
     x = int(randint(1, P - 1))
     y = fast_module_exp(g, x, P)
@@ -50,38 +54,42 @@ def Alice_create_keys(g, P):
 
 def Alice_hash(m, P):
     '''Алиса подписывает документ.'''
-    h = int(sha256(m.encode('utf-8')).hexdigest(), 16)
+    h = int(sha224(m.encode('utf-8')).hexdigest(), 16)
+
     if h < P:
         print(f'\tХеш (h): {h}\n')
         return h
     else:
-        return ('Error')
+        print('Ошибка: хеш больше или равен P.')
+        return None
 
 
 def selection_k_r(P, g):
     '''Выбирается число k, считается r.'''
     while True:
         k = int(randint(1, P - 1))
-        k_calc = k ** -1
-        k_test = fast_module_exp(k * k_calc, -1, P - 1)
+        k, k_test = mod_inverse(P - 1)
         if extended_euclidean(k, P - 1) == 1 and k_test == 1:
             r = fast_module_exp(g, k, P)
             print('Получено число k, которое удовлетворяет',
                   'условию "kk^(-1) mod (P-1)=1".')
-            return k, r, k_calc
+            return k, r, k_test
 
 
-def sign_doc(h, x, r, P, k_calc):
+def sign_doc(h, x, r, P, k):
     '''Вычисляются числа u, s.'''
+    if h is None:
+        print('Ошибка в вычислении хеша.')
+        return None, None
     u = (h - x * r) % (P - 1)
-    s = (k_calc * u) % (P - 1)
+    s = (k * u) % (P - 1)
     print('Числа u, s посчитаны.\n')
     return u, s
 
 
 def sign_el_gamal():
     '''Основная логика работы подписывания документа'''
-    m = 'Hello'
+    m = 'Кушко Данил с группы АБ-109 хорошо постарался и хочет 5'
     P = Alice_create_P_Q()
 
     g = find_primitive_root(P)
@@ -93,13 +101,12 @@ def sign_el_gamal():
     h = Alice_hash(m, P)
     k, r, k_calc = selection_k_r(P, g)
     u, s = sign_doc(h, x, r, P, k_calc)
-    print('Документ подписан!\n')
 
-    choice = int(input('Если желаете увидеть проверку, нажмите 1  '))
-    if choice == 1:
-        test_el_gamal(m, y, r, s, g, h, P)
+    if test_el_gamal(y, r, s, g, h, P) is not False:
+        print('\n\tДокумент подписан!\n')
+        print(f'r = {r}, \ns = {s}')
     else:
-        return 'Проверки видимо не будет.'
+        print('Проверки видимо не будет.')
 
 
 if __name__ == '__main__':

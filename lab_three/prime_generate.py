@@ -6,7 +6,7 @@ from random import getrandbits
 import gmpy2
 
 from castom_lab_one import miller_test
-from my_const import BITS_GHOST, K, BITS_RSA, BITS_GAMAL
+from my_const import BITS_GAMAL, BITS_RSA, BITS_GHOST, K
 
 
 def generate_prime_and_check(bits: int, k: int) -> int:
@@ -29,7 +29,7 @@ def return_big_amount() -> int:
     '''
     Возврат большого числа указанных бит
     '''
-    large_prime = generate_prime_and_check(BITS, K)
+    large_prime = generate_prime_and_check(BITS_GAMAL, K)
     return large_prime
 
 
