@@ -11,8 +11,8 @@ def test_el_gamal(y, r, s, g, h, P):
 
     print('\nШаг 2. Проверяем равенство y^r * r^s = g^h (mod P).')
     temp1 = (fast_module_exp(y, r, P) * fast_module_exp(r, s, P)) % P
-    temp2 = fast_module_exp(g, h, P)
+    temp2 = fast_module_exp(g, h, P) % P
     if temp1 == temp2:
-        return False
-    else:
         return True
+    else:
+        return False

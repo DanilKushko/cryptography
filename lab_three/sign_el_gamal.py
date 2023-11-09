@@ -1,23 +1,29 @@
+'''
+    Часть 1.
+  "Подпись Эль Гамаля"
+
+UPD: для корректной работы в файле
+    prime_generate в ф-ии generate_prime_and_check
+    рекомендуется передавать BITS_GAMAL
+'''
 from sympy import primitive_root
 from random import randint
+from gmpy2 import mpz, invert
 from hashlib import sha224
 
 from prime_generate import prime_generate
-from castom_lab_one import (miller_test, fast_module_exp,
-                            extended_euclidean)
-from my_const import K
 from test_el_gamal import test_el_gamal
+from castom_lab_one import (miller_test, fast_module_exp)
+from my_const import K
 
 
 def mod_inverse(P):
-    '''Находит обратный элемент числа по модулю.'''
+    '''Жеское нахождение k его инверсии числа.'''
     while True:
         k = int(randint(1, P - 1))
-        if extended_euclidean(k, P - 1) == 1:
-            break
-
-    res = extended_euclidean(P - 1, k)
-    return int(k), int(res)
+        k_inverse = invert(mpz(k), P - 1)
+        if (k * k_inverse % (P - 1)) == 1:
+            return int(k), int(k_inverse)
 
 
 def Alice_create_P_Q():
@@ -66,25 +72,23 @@ def Alice_hash(m, P):
 
 def selection_k_r(P, g):
     '''Выбирается число k, считается r.'''
-    while True:
-        k = int(randint(1, P - 1))
-        k, k_test = mod_inverse(P - 1)
-        if extended_euclidean(k, P - 1) == 1 and k_test == 1:
-            r = fast_module_exp(g, k, P)
-            print('Получено число k, которое удовлетворяет',
-                  'условию "kk^(-1) mod (P-1)=1".')
-            return k, r, k_test
+    k, k_test = mod_inverse(P)
+    r = fast_module_exp(g, k, P)
+
+    print('Получено число k, которое удовлетворяет',
+          'условию "kk^(-1) mod (P-1)=1".')
+    return k, r, k_test
 
 
-def sign_doc(h, x, r, P, k):
+def sign_doc(h, x, r, P, k_test):
     '''Вычисляются числа u, s.'''
     if h is None:
         print('Ошибка в вычислении хеша.')
         return None, None
     u = (h - x * r) % (P - 1)
-    s = (k * u) % (P - 1)
+    s = (k_test * u) % (P - 1)
     print('Числа u, s посчитаны.\n')
-    return u, s
+    return s
 
 
 def sign_el_gamal():
@@ -99,8 +103,8 @@ def sign_el_gamal():
           f'\tx = {x}\n\ty = {y}')
 
     h = Alice_hash(m, P)
-    k, r, k_calc = selection_k_r(P, g)
-    u, s = sign_doc(h, x, r, P, k_calc)
+    k, r, k_test = selection_k_r(P, g)
+    s = sign_doc(h, x, r, P, k_test)
 
     if test_el_gamal(y, r, s, g, h, P) is not False:
         print('\n\tДокумент подписан!\n')

@@ -1,5 +1,14 @@
-from gmpy2 import mpz
+from gmpy2 import mpz, invert
 from random import randint
+
+
+def mod_inverse(P):
+    '''Жеское нахождение k его инверсии числа.'''
+    while True:
+        k = int(randint(1, P - 1))
+        k_inverse = invert(mpz(k), P - 1)
+        if (k * k_inverse % (P - 1)) == 1:
+            return int(k), int(k_inverse)
 
 
 def extended_euclidean_premium(a, b):
