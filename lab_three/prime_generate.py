@@ -29,7 +29,7 @@ def return_big_amount() -> int:
     '''
     Возврат большого числа указанных бит
     '''
-    large_prime = generate_prime_and_check(BITS_GAMAL, K)
+    large_prime = generate_prime_and_check(BITS_RSA, K)
     return large_prime
 
 

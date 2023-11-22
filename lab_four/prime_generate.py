@@ -6,7 +6,8 @@ from random import getrandbits
 import gmpy2
 
 from castom_lab_one import miller_test
-from mental_pocker import K, n
+K = 64
+n = 16
 
 
 def generate_prime_and_check(bits: int, k: int) -> int:
